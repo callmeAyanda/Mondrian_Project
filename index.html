@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      gap: 9px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .white2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .white3 {
+      background-color: #F0F1EC;
+      grid-row-start: 4;
+    }
+    .white4 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .white5 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+
+    .red {
+      background-color: #E72F24;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .black {
+      background-color: #232629;
+      grid-row-start: 4;
+      grid-row-end: auto;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+    .blue {
+      background-color: #004592;
+      grid-column-start: 4;
+      grid-column-end: auto;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border-bottom: solid 10px black;
+    }
+    .yellow {
+      background-color: #F9D01E;
+      grid-row-start: 4;
+      grid-row-end: auto;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid-container">
+    <div class="color red"></div>
+
+    <div class="color white"></div>
+    <div class="color white2"></div>
+    <div class="color white3"></div>
+    <div class="color white4"></div>
+    <div class="color white5"></div>
+
+    <div class="color black"></div>
+    <div class="color blue"></div>
+    <div class="color yellow"></div>
+  </div> 
+
+</body>
+
+</html>
